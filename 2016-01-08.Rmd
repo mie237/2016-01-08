@@ -2,7 +2,9 @@
 title: "MIE237"
 author: "Neil Montgomery"
 date: "2016-01-08"
-output: ioslides_presentation
+output: 
+  ioslides_presentation: 
+    css: styles.css
 ---
 \newcommand{\Var}{\text{Var}}
 \newcommand{\Cov}{\text{Cov}}
@@ -42,7 +44,7 @@ Dataset | 24, 31, 2, 14, 4, $\ldots$ 9 |
 
 ## "Statistics"---the general problem and an approach to its solution { .build }
 
-The distrubution of the random variable used to model the 
+The distribution of the random variable used to model the 
 population might be only partly specified.
 
 * $N(15, 4)$
@@ -133,11 +135,11 @@ for $n$ "large enough", which depends mostly on the *skewness* of the underlying
 
 $n$ large enough | 2 | 10 | 30 | 60
 --|--|--|--|--
-underlying shape | Normal | Symmetric | Some kewness | More skewness
+underlying shape | Normal | Symmetric | Some skewness | More skewness
 
 ## Summary of exact and approximate results
 
-Statistic | Exact distribution if population is normal | "for $n$ large enough"
+Statistic | Normal | "for $n$ large enough"
 --|--|--
 $\frac{\overline X - \mu}{\sigma/\sqrt n}$ | $N(0,1)$ | $N(0,1)$
 $\frac{(n-1)S^2}{\sigma^2}$ | $\chi^2_{n-1}$ | ???
